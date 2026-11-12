@@ -1,0 +1,75 @@
+<main id="main">
+  <section class="page-hero" aria-labelledby="page-title">
+    <div class="media is-loading">
+      <img src="https://www.reallifesafaris.com/assets/img/home/home.jpeg" alt="Safari landscape in Rwanda" fetchpriority="high" decoding="async">
+      <span class="media-fallback-label" aria-hidden="true">Safari landscape, Rwanda</span>
+    </div>
+    <div class="wrap page-hero-inner">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Tours &amp; destinations</li></ol></nav>
+      <span class="eyebrow">Tours &amp; destinations</span>
+      <h1 id="page-title">Six ways into Rwanda, and seven places to go.</h1>
+      <p>Half-day hikes, full days on foot, savannah safaris and a week on two wheels. Filter by what you love, open any tour for the full plan, or ask us to build something new.</p>
+    </div>
+  </section>
+
+  <div class="filter-bar" id="tours">
+    <div class="wrap filter-inner">
+      <div class="filter-group" role="group" aria-label="Filter by experience" id="cat-filters"></div>
+      <div class="filter-side">
+        <label for="duration-filter">Duration</label>
+        <select class="select-sm" id="duration-filter">
+          <option value="all">Any length</option>
+          <option value="half">Half day</option>
+          <option value="day">Full day</option>
+          <option value="multi">Multi-day</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" aria-labelledby="tours-title" style="padding-top:clamp(2.5rem,2rem + 2vw,4rem)">
+    <div class="wrap">
+      <h2 class="visually-hidden" id="tours-title">Tours</h2>
+      <div class="results-line">
+        <p id="results-count" aria-live="polite">Showing all tours</p>
+        <button class="reset-btn" type="button" id="reset-filters" hidden>Clear filters</button>
+      </div>
+      <div class="tour-grid" id="tour-grid"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <h3>No tours match those filters yet.</h3>
+        <p>We plan custom trips too. Tell us what you have in mind and we'll design it, or clear the filters to see everything.</p>
+        <div class="btn-row" style="justify-content:center">
+          <button class="btn btn--ghost" type="button" id="empty-reset">Clear filters</button>
+          <a class="btn" href="index.html?tour=tailor-made#plan">Ask for a custom trip</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="destinations" aria-labelledby="dest-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head section-head--split">
+        <div style="display:grid;gap:18px">
+          <span class="eyebrow">Destinations</span>
+          <h2 id="dest-title" style="font-size:var(--t-2xl)">Where we take you.</h2>
+        </div>
+        <p class="lede">Rwanda is small enough to combine rainforest, volcanoes, lakes and savannah in one trip. These are the places our tours and tailor-made trips visit most.</p>
+      </div>
+      <div class="dest-list" id="dest-list"></div>
+    </div>
+  </section>
+
+  <section class="section on-dark" aria-labelledby="cta-title">
+    <div class="wrap cta-band">
+      <div>
+        <span class="eyebrow">Tailor-made</span>
+        <h2 id="cta-title" style="margin-top:18px">Can't see the exact trip? We'll build it.</h2>
+        <p>Combine gorillas with Lake Kivu, add a birding day to a business trip, or stretch Akagera to three days. Tell us your dates and we'll shape the plan.</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn--light" href="index.html?tour=tailor-made#plan">Plan a custom trip {{ARROW}}</a>
+        <a class="btn btn--outline-light" href="https://wa.me/250789248756" target="_blank" rel="noopener">WhatsApp us</a>
+      </div>
+    </div>
+  </section>
+</main>
