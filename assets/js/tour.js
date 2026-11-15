@@ -13,7 +13,7 @@
     document.getElementById("tour-short").textContent = "The link may be out of date. Browse all tours or tell us what you're looking for.";
     document.getElementById("tour-kicker").textContent = "Tour not found";
     document.getElementById("crumb-current").textContent = "Not found";
-    document.querySelector(".facts-bar").hidden = true;
+    document.querySelector(".facts-wrap").hidden = true;
     main.innerHTML = '<div class="empty-state"><h3>Try one of our six tours</h3><p>Every tour is listed on the tours page.</p><a class="btn" href="tours.html#tours">Browse tours</a></div>';
     document.getElementById("tour-enquiry").removeAttribute("data-tour");
     return;

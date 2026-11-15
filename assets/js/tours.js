@@ -52,14 +52,16 @@
     var host = document.getElementById("dest-list");
     host.innerHTML = D.DESTINATIONS.map(function (d) {
       var tour = D.TOURS.filter(function (t) { return t.id === d.tour; })[0];
-      return '<article class="dest reveal" id="dest-' + d.id + '">' +
-        U.media(d.image, { label: d.name, decorative: false }) +
-        '<div style="min-width:0"><div class="dest-head"><h3>' + esc(d.name) + '</h3><span class="dest-meta">' + esc(d.region) + " · " + esc(d.elevLabel) + "</span></div>" +
+      var short = d.name.split(",")[0].replace(" National Park", "");
+      return '<article class="dest-card reveal" id="dest-' + d.id + '">' +
+        U.media(d.image, { label: d.name }) +
+        '<div class="dest-body"><p class="dest-meta">' + esc(d.region) + " · " + esc(d.elevLabel) + "</p>" +
+        "<h3>" + esc(d.name) + "</h3>" +
         "<p>" + esc(d.text) + "</p>" +
-        '<ul class="chips light-chips">' + d.activities.map(function (a) { return "<li>" + esc(a) + "</li>"; }).join("") + "</ul></div>" +
-        '<div class="dest-cta"><a class="btn btn--ghost" href="index.html?dest=' + d.id + '#plan">Enquire about ' + esc(d.name.split(",")[0].replace(" National Park", "")) + "</a>" +
-        (tour ? '<a class="link-arrow" href="tour.html?id=' + tour.id + '">Related tour: ' + esc(tour.title.length > 34 ? tour.title.slice(0, 32).replace(/\s+\S*$/, "") + "…" : tour.title) + " " + U.ICON.arrow + "</a>" : "") +
-        "</div></article>";
+        '<ul class="pills pills--dark">' + d.activities.map(function (a) { return "<li>" + esc(a) + "</li>"; }).join("") + "</ul>" +
+        '<div class="dest-cta"><a class="link-arrow" href="index.html?dest=' + d.id + '#plan">Plan a visit to ' + esc(short) + " " + U.ICON.arrow + "</a>" +
+        (tour ? '<a class="dest-tour" href="tour.html?id=' + tour.id + '">Related tour: ' + esc(tour.title) + "</a>" : "") +
+        "</div></div></article>";
     }).join("");
     U.wireImages(host);
   }

@@ -1,7 +1,29 @@
-# Real Life Safaris: website redesign prototype
+# Real Life Safaris: website redesign prototype, version 2
 
-A three-page concept for a new reallifesafaris.com, built as a fast static site
-(plain HTML, CSS and JavaScript, with no frameworks and no build step needed to view it).
+A rebuilt, more polished version of the first concept (in `../real-life-safaris-prototype/`).
+Same content and features, new design. Plain HTML, CSS and JavaScript, no build step needed to view it.
+
+## What changed from version 1
+
+- **Imigongo zigzag removed everywhere**: the section divider, the zigzag marks before every
+  heading label, the zigzag bullets on tour highlights, the border under the "Why us" section and the
+  zigzag-shaped logo mark. The temporary logo is now a sun over two hills.
+- **Lighter, warmer look.** Version 1 was mostly dark green with small grey monospace labels.
+  Version 2 uses warm paper and sand backgrounds, deep forest green for weight, a red-earth clay
+  colour for every button, and sunrise gold as a small highlight.
+- **New type**: Fraunces (a soft editorial serif) for headlines and Manrope for reading text,
+  at larger, easier-to-read sizes. The monospace "trail data" labels are gone.
+- **Homepage rebuilt around photos and a clear path to booking**: a full-screen hero, a
+  "find my trip" bar (interest + time available, goes straight to the filtered tours), an
+  at-a-glance strip, an about section with a photo collage, a photo grid of experiences, featured
+  tours, a destination explorer that replaces the elevation chart, a 3-step "how it works",
+  why-us with the safari vehicle card, and the enquiry form.
+- **Tour cards**: rounded white cards, whole card clickable, clearer price and duration.
+- **Tours page**: sticky pill filters with counts, destinations as photo cards, a photo call-to-action.
+- **Tour page**: taller photo hero, a floating facts card, highlights as tick cards, a cleaner
+  itinerary timeline, and the enquiry form as a sticky side card on desktop.
+- **Header**: WhatsApp number in the header on wide screens, full-screen menu on mobile.
+- Content, prices and placeholders are unchanged: nothing was invented.
 
 ## Pages
 
