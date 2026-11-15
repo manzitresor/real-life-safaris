@@ -29,18 +29,18 @@ def head(title, desc, canonical):
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{title}</title>
 <meta name="description" content="{desc}">
-<meta name="theme-color" content="#173326">
+<meta name="theme-color" content="#151a1c">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Real Life Safaris">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:image" content="https://www.reallifesafaris.com/assets/img/home/home2.jpeg">
 <link rel="canonical" href="https://www.reallifesafaris.com/{canonical}">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23173326'/%3E%3Ccircle cx='25' cy='15' r='5' fill='%23e3a73f'/%3E%3Cpath d='M0 31c6-6 12-8 18-4 5 3 11 2 22-5v18H0z' fill='%23c0582d'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23151a1c'/%3E%3Ccircle cx='25' cy='15' r='5' fill='%23c7b79b'/%3E%3Cpath d='M0 31c6-6 12-8 18-4 5 3 11 2 22-5v18H0z' fill='%239a743e'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://www.reallifesafaris.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Jost:wght@400;500;600&family=Marcellus&display=swap">
 <link rel="stylesheet" href="assets/css/styles.css">
 """
 
